@@ -9,5 +9,25 @@ export default function Header() {
             </div>
 
             <div className={styles.menu}>
-                <a className={styles.on} href="Início" />
-                </div> href="Início"
+                <a className={styles.menuItem} href="/">Início</a>
+                <a href="">Livros</a>
+                <a href="">Categorias</a>
+                <a href="">Autores</a>
+                <a href="">Ofertas</a>
+            </div>
+
+            <div className={styles.search}>
+                <input type="text" placeholder="Pesquisar..." />
+                <button>🔍</button>
+            </div>
+
+            <div className={styles.icon}>
+                <a href="">🛒</a>
+                <a href="">⭐</a>
+                <a href="">👤</a>
+
+            </div>
+    </header>
+    );
+}   
+
