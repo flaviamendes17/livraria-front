@@ -1,0 +1,36 @@
+.banner {
+    background-color: linear-gradient(135deg, pink, blue, purple);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6x rgba(0, 0, 0, 0.2);
+}
+
+.banner h1 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.banner button {
+    margin-top: 20px;
+    background-color: #6a668f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8x;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
+    background-color: #5c1bd6;
+}

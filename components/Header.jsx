@@ -5,7 +5,7 @@ export default function Header() {
         <header className={styles.header}>
             <div className={styles.title}>
                 <h1>📚 Meraki </h1>
-                <p> Iluminando mentes, inspirando futuros. </p>
+                <p> Iluminando mentes inspirando futuros. </p>
             </div>
 
             <div className={styles.menu}>
