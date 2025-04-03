@@ -8,13 +8,6 @@ export default function Header() {
                 <p> Iluminando mentes inspirando futuros. </p>
             </div>
 
-            <div className={styles.menu}>
-                <a className={styles.menuItem} href="/">Início</a>
-                <a href="">Livros</a>
-                <a href="">Categorias</a>
-                <a href="">Autores</a>
-                <a href="">Ofertas</a>
-            </div>
 
             <div className={styles.icon}>
                 <a href="">🛒</a>
