@@ -1,5 +1,5 @@
 .banner {
-    background-color: linear-gradient(135deg, pink, blue, purple);
+    background-color: purple;
     display: flex;
     justify-content: center;
     align-items: center;

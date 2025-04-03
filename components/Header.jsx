@@ -1,33 +1,45 @@
 import styles from "../styles/Header.module.css";
 
-export default function Header() {
+const Header = () => {
     return (
-        <header className={styles.header}>
-            <div className={styles.title}>
-                <h1>📚 Meraki </h1>
-                <p> Iluminando mentes inspirando futuros. </p>
+        <div className={styles.header}>
+            <div className={styles.container}>
+                <h1 className={styles.title}>📚 Meraki</h1>
+                <p className={styles.slogan}> Iluminando mentes inspirando futuros!</p>
             </div>
 
-            <div className={styles.menu}>
-                <a className={styles.menuItem} href="/">Início</a>
-                <a href="">Livros</a>
-                <a href="">Categorias</a>
-                <a href="">Autores</a>
-                <a href="">Ofertas</a>
-            </div>
+        <nav className={styles.nav}>
+            <ul className={styles.navList}>
+            <li>
+                <a href="/home" className={styles.home}>Início</a>
+            </li>
+            <li>
+                <a href="/Livros" className={styles.home}>Livros</a>
+            </li>
+            <li>
+                <a href="/Categorias" className={styles.home}>Categorias</a>
+            </li>
+            <li>
+                <a href="/Autores" className={styles.home}>Autores</a>
+            </li>
+            <li>
+                <a href="/ofertas" className={styles.home}>Ofertas</a>
+            </li>
+            </ul>
+        </nav>
 
-            <div className={styles.search}>
-                <input type="text" placeholder="Pesquisar Livros, autores, categorias..." />
-                <button>🔍</button>
-            </div>
+        <div className={styles.searchContainer}>
+            <input type="text" placeholder="Pesquisar" className={styles.inputPesquisar} />
+            <button className={styles.lupa}>🔎</button>
+        </div>
 
-            <div className={styles.icon}>
-                <a href="">🛒</a>
-                <a href="">⭐</a>
-                <a href="">👤</a>
-
-            </div>
-    </header>
+        <div className={styles.icons}>
+            <img src="/iconFavoritos.jpg" alt="Favoritos" className={styles.favIcon} />
+            <img src="/iconCarrinho.jpg" alt="Carrinho" className={styles.cartIcon} />
+            <img src="/iconUser.png" alt="User" className={styles.userIcon} />
+        </div>
+        </div>
     );
-};  
+}
 
+export default Header;
