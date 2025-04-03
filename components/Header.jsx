@@ -16,11 +16,6 @@ export default function Header() {
                 <a href="">Ofertas</a>
             </div>
 
-            <div className={styles.search}>
-                <input type="text" placeholder="Pesquisar..." />
-                <button>🔍</button>
-            </div>
-
             <div className={styles.icon}>
                 <a href="">🛒</a>
                 <a href="">⭐</a>
