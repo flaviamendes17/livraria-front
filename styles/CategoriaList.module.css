@@ -2,12 +2,9 @@
     display: flex;
     justify-content: center;
     gap: 16px;
-    flex-wrap: nowrap;
-    overflow-x: auto;
     padding: 0px;
     list-style: none;
     width:100%;
-    white-space: nowrap;
     margin: 0;
 }
 
