@@ -1,6 +1,8 @@
 import styles from "../styles/Header.module.css";
+import Search from "./Search.jsx";
+import NavBar from "./NavBar.jsx";
 
-export default function Header() {
+const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.title}>
@@ -8,26 +10,18 @@ export default function Header() {
                 <p> Iluminando mentes inspirando futuros. </p>
             </div>
 
-            <div className={styles.menu}>
-                <a className={styles.menuItem} href="/">Início</a>
-                <a href="">Livros</a>
-                <a href="">Categorias</a>
-                <a href="">Autores</a>
-                <a href="">Ofertas</a>
-            </div>
-
-            <div className={styles.search}>
-                <input type="text" placeholder="Pesquisar..." />
-                <button>🔍</button>
+            <NavBar />
+            <div className={styles.actions}>
+                <Search />
             </div>
 
             <div className={styles.icon}>
                 <a href="">🛒</a>
                 <a href="">⭐</a>
                 <a href="">👤</a>
-
             </div>
-    </header>
+        </header>
     );
-}   
+};
 
+export default Header;
