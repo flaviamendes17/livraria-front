@@ -1,6 +1,8 @@
 import Header from "../components/Header";
 import CategoriaList from "../components/CategoriaList";
 import Footer from "../components/Footer";
+import Lancamentos from "../components/Lancamentos";
+import LancamentosDestaque from "@/components/LancamentosDestaque";
 
 const categorias = [
     { name: "Ficção Científica", image: "/ficcao-cientifica.png" },
@@ -23,6 +25,7 @@ export default function Page() {
                 <CategoriaList categorias={categorias} />
             </main>
             <Footer /> 
+            <LancamentosDestaque />
         </div>
     );
 }
