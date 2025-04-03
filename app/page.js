@@ -3,6 +3,7 @@ import CategoriaList from "../components/CategoriaList";
 import Footer from "../components/Footer";
 import Lancamentos from "../components/Lancamentos";
 import LancamentosDestaque from "@/components/LancamentosDestaque";
+import Newletter from "../components/Newletter";
 
 const categorias = [
     { name: "Ficção Científica", image: "/ficcao-cientifica.png" },
@@ -24,8 +25,10 @@ export default function Page() {
                 <p>Explore nosso catálogo e descubra novos mundos!</p>
                 <CategoriaList categorias={categorias} />
             </main>
-            <Footer /> 
+            
             <LancamentosDestaque />
+            <Newletter />
+            <Footer /> 
         </div>
     );
 }
