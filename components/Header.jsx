@@ -34,9 +34,9 @@ const Header = () => {
         </div>
 
         <div className={styles.icons}>
-            <img src="/iconFavoritos.jpg" alt="Favoritos" className={styles.favIcon} />
-            <img src="/iconCarrinho.jpg" alt="Carrinho" className={styles.cartIcon} />
-            <img src="/iconUser.png" alt="User" className={styles.userIcon} />
+            <img src="/iconFavoritos.png" alt="Favoritos" className={styles.favIcon} />
+            <img src="/trolley.png" alt="Carrinho" className={styles.cartIcon} />
+            <img src="/user.png" alt="User" className={styles.userIcon} />
         </div>
         </div>
     );

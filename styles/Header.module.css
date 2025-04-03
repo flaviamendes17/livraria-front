@@ -1,89 +1,126 @@
 .header {
-    background-color: #b2a6fe ;
+    background-color: #b9aefd ;
     display: flex;
-    justify-content: center;
-    margin: 2%;
+    justify-content: space-between;
+    padding: 30px 30px;
+    margin: 2px;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
 
-.header h1 {
-    font-size: 2rem;
-    color: #6a668f;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 2%;
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .title {
-    width: 13.5%;
-}
-
-.header P {
-    font-size: .64rem;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    margin-left: 2%;
-
-}
-
-.header span {
-    color: #b2a6fe;
-}
-
-.menu {
-    display: flex;
-    gap: 1.2rem;
-    margin-left: 5%;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #fff;
+    color: rgb(107, 107, 194);
+    font-size: 27px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.85rem;
+    margin-right: 10px;
 }
 
-.menu .on {
-    color: aqua;
-    border-bottom: 2px solid blue;
+.slogan {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
 }
 
 
-.search {
-    margin-left: 5%;
+.navList {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.search input {
-    padding: 5px;
-    height: 1.3rem;
-    border: 1px solid rgb(37, 46, 129);
-    border-right: none;
-    border-radius: 30px 0 0 30px;
-    outline: none;
+.container {
+    display: flex;
+    align-items: center;
 }
 
-.search button {
-    height: 1.8rem;
-    border: 1px solid rgb(37, 46, 129);
-    background-color: #ffffff;
-    color: rgb(217, 54, 54);
-    border-left: none;
-    width: 2.5rem;
-    border-radius: 0 30px 30px 0;
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
-.search button:hover {
-    background-color: #ddd6eb;
-    color: #fff;
+.link:hover {
+    color: #ff00b7;
 }
 
-.icon {
-    margin-left: 5%;
-    gap: 2rem;
+.navList li {
+    margin-right: 20px;
 }
 
-.icon a {
+.home {
     text-decoration: none;
-    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.home:hover {
+    color: #8325c7;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #454165;
+    border-radius: 30px;
+    padding: 5px 10px;
+    width: 300px;
+}
+
+.inputPesquisar {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.lupa {
+    background-color: rgb(196, 161, 196);
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lupa:hover {
+    background-color: #b2a6fe;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+
+.favIcon,
+.cartIcon,
+.userIcon {
+    width: 24px; /* Tamanho padrão de ícones */
+    height: 24px;
+    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho sem distorção */
+    display: inline-block; /* Garante que se comportem como ícones */
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar interatividade */
+}
+
+.favIcon:hover,
+.cartIcon:hover,
+.userIcon:hover {
+    transform: scale(1.1); /* Efeito de hover para destacar o ícone */
 }
