@@ -21,12 +21,6 @@ export default function Page() {
     return (
         <div>
             <Header />
-            <main>
-                <h1>Bem-vindo à Livraria</h1>
-                <p>Explore nosso catálogo e descubra novos mundos!</p>
-                <CategoriaList categorias={categorias} />
-            </main>
-            
             <LancamentosDestaque />
             <Newletter />
             <Footer /> 
