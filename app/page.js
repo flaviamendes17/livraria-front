@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Banner from "../components/Banner.jsx";
 import CategoriaList from "../components/CategoriaList";
 import Footer from "../components/Footer";
 import Lancamentos from "../components/Lancamentos";
