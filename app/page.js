@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Lancamentos from "../components/Lancamentos";
 import LancamentosDestaque from "@/components/LancamentosDestaque";
 import Newletter from "../components/Newletter";
+import Destaques from "../components/Destaques"; // Corrigido: Importação do componente correto
 
 const categorias = [
     { name: "Ficção Científica", image: "/ficcao-cientifica.png" },
@@ -21,8 +22,8 @@ export default function Page() {
     return (
         <div>
             <Header />
-            <Deataques>
-            </Deataques>
+            <Destaques categorias={categorias}> {/* Passando a lista de categorias */}
+            </Destaques>
             <LancamentosDestaque />
             <Newletter />
             <Footer /> 
