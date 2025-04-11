@@ -1,0 +1,35 @@
+.container {
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.h2{
+    font-size: 1.5em;
+    color: #6a668f;
+    font-weight: bold;
+    margin: 0;
+}
+
+.verTodos {
+    font-size: 0.9em;
+    color: #b2a6fe;
+    text-decoration: none;
+}
+
+.verTodos:hover {
+    text-decoration: underline;
+}
+
+.lista {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}

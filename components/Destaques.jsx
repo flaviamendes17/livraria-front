@@ -13,7 +13,7 @@ const Destaques = ({ imagem, titulo, autor, avaliacao, categorias, preco }) => {
             </div>
             <div className={styles.categorias}>
                 {categorias.map((cat, index) => (
-                    <span key={index} className={styles.tag}>{cat}</span>
+                    <span key={index} className={styles.tag}>{cat.name}</span>
                 ))}
             </div>
             <p className={styles.preco}>R$ {preco}</p>
